@@ -1,0 +1,48 @@
+/* CSS BY: Joey Cucco */
+
+/* IMPORTED FONTS */
+
+
+/* CSS RESET */
+
+
+/* ROOT VARIABLES */
+:root {
+ --red: #ff0000;
+  --orange: #ff7f00;
+  --yellow: #ffff00;
+  --green: #00ff00;
+  --blue: #0000ff;
+  --indigo: #4b0082;
+  --violet: #8f00ff;
+  --white: #ffffff;
+  --light-gray: #f2f2f2;
+  --gray: #cccccc;
+  --dark-gray: #333333;
+  --black: #000000;
+  --dark-blue: #001f3f;
+}
+
+
+/* GLOBAL STYLES*/
+body {
+    
+}
+
+
+/* MEDIA QUERY (medium) */
+@media (min-width: 768px) {
+
+}
+
+
+/* MEDIA QUERY (large) */
+@media (min-width: 1024px) {
+
+}
+
+
+/* MEDIA QUERY (xl) */
+@media (min-width: 1440px) {
+
+}
