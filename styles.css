@@ -20,6 +20,7 @@ body {
     margin: 0 auto;
     width: 1200px;
     width: 100%;
+    cursor: url('assets/Old_English_D_Cursor_Tigers.png'), auto;
 }
 
 #header {
@@ -72,6 +73,7 @@ body {
     background-color: var(--green);
     border: none;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .darkMode {
