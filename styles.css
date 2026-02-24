@@ -1,12 +1,5 @@
 /* CSS BY: Joey Cucco */
 
-/* IMPORTED FONTS */
-
-
-/* CSS RESET */
-
-
-/* ROOT VARIABLES */
 :root {
  --red: #ff0000;
   --orange: #ff7f00;
@@ -23,26 +16,407 @@
   --dark-blue: #001f3f;
 }
 
-
-/* GLOBAL STYLES*/
 body {
-    
+    margin: 0 auto;
+    width: 1200px;
+    width: 100%;
 }
 
+#header {
+    position: relative;
+    width: 100%;
+}
+
+.hero {
+    background: url('assets/BG_Image_ANIMATED_STARS.gif') no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white);
+    border-top: 10px solid var(--green);
+    border-bottom: 10px solid var(--green);
+}
+
+#navbar {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 32px;
+}
+
+#lightDarkMode {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+#lightDarkModeBTN {
+    padding: 8px 16px;
+    background-color: var(--green);
+    border: none;
+    cursor: pointer;
+}
+
+.darkMode {
+    background-color: var(--dark-gray);
+    color: var(--green);
+}
+
+.darkMode .blend {
+    background-blend-mode: multiply;
+}
+
+.slideLogo {
+    width: 400px;
+    animation: slideWelcome 1.5s ease-in-out forwards;
+}
+
+@keyframes slideWelcome {
+    0% {transform: translateX(-1500px);}
+    50% {transform: translateX(100px);}
+    100% {transform: translateX(0px);}
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 20px;
+    animation: slowAppear 5s forwards;
+}
+
+@keyframes slowAppear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#more {
+    margin-top: 30px;
+    font-size: 24px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+@keyframes slowAppear {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+#shopTitle {
+    width: 1200px;
+    margin: 60px auto 30px auto;
+    text-align: center;
+}
+
+.shopTitleH2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.shopTitleDescription {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#shop {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.productList {
+    flex: 3;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.productItem {
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.productImage {
+    margin: 0 0 15px 0;
+}
+
+.productImage img {
+    width: 75%;
+    height: auto;
+    display: block;
+    padding-left: 15px;
+}
+
+.productName {
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.productPrice {
+    font-size: 16px;
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+.productControl {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.productControl:hover {
+    background-color: var(--blue);
+}
+
+#cart {
+    flex: 1;
+    background-color: var(--light-gray);
+    padding: 25px;
+    border: 1px solid var(--gray);
+}
+
+.cartTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+}
+
+.cartItemList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cartItemList li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray);
+    font-size: 14px;
+}
+
+.cartTotals {
+    margin-bottom: 20px;
+}
+
+.cartTotals p {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.totalLine {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#checkoutBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--green);
+    border: none;
+    color: var(--black);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#checkoutBtn:hover {
+    background-color: var(--yellow);
+}
+
+
+#contact {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+#contact header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+#contactWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#contactInfo {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.infoImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.infoText {
+    font-size: 16px;
+    color: var(--green);
+    line-height: 1.5;
+}
+
+#contactForm {
+    flex: 2;
+    min-width: 320px;
+}
+.contactTitle {
+    font-size: 32px;
+    color: var(--dark-blue);
+}
+
+#contactForm {
+    background-color: var(--white);
+    padding: 32px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.formGroup {
+    border: none;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label,
+.contactMethodLegend {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--dark-gray);
+}
+
+.formGroup strong {
+    color: var(--red);
+    margin-left: 4px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 12px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--dark-blue);
+    box-shadow: 0 0 0 2px rgba(0, 31, 63, 0.1);
+}
+
+.formGroup textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.formGroup input[type="radio"] {
+    margin-right: 6px;
+}
+
+.formGroup label input[type="radio"] {
+    width: auto;
+}
+
+.errorMessage {
+    font-size: 14px;
+    color: var(--red);
+    margin-top: 4px;
+    min-height: 18px;
+}
+
+#contactBtn {
+    background-color: var(--green);
+    color: var(--black);
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#contactBtn:hover {
+    background-color: var(--yellow);
+}
+
+#contactBtn:active {
+    transform: scale(0.98);
+}
+
+#submitMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--green);
+}
 
 /* MEDIA QUERY (medium) */
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
+    #shop {
+        width: 95%;
+        flex-direction: column;
+    }
 
+    .productList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #cart {
+        width: 100%;
+    }
 }
 
-
-/* MEDIA QUERY (large) */
-@media (min-width: 1024px) {
-
-}
-
-
-/* MEDIA QUERY (xl) */
-@media (min-width: 1440px) {
-
+@media (max-width: 768px) {
+    .productList {
+        grid-template-columns: 1fr;
+    }
 }

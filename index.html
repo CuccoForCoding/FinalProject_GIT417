@@ -1,14 +1,198 @@
 <!DOCTYPE html>
 <html id="#html" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project - GIT 417</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body id="body">
 
+    <header id="header">
 
-    <script src="script.js"></script>
+        <section id="hero" class="hero">
+            <img src="assets/LOGO_TRANSPARENT.png" class="slideLogo" alt="Animated Logo Not Shown">
+                <p class="popOutHover slowAppear">Your Gateway to Exclusive Collectibles</p>
+        </section>
+
+        <nav id="navbar">
+            <ul class="navList">
+                <li class="navItem"><a href="#about">About Us</a></li>
+                <li class="navItem"><a href="#shop">Shop</a></li>
+                <li class="navItem"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <aside id="lightDarkMode">
+            <button id="lightDarkModeBTN">&#x1F440;</button>
+        </aside>
+    </header>
+
+    <main id="main">
+
+        <section id="about">
+            <h2 class="aboutTitle">ABOUT MIGGY BECK</h2>
+            <article class="aboutContent">Our newest exclusive drops for the week</article>
+        </section>
+
+         <section id="shopTitle">
+            <h2 class="shopTitleH2">Drop Shop - EXCLUSIVES</h2>
+            <article class="shopTitleDescription">Dont miss our weekly drops! Prices will fluctuate. <br> Some items may never be listed again!</article>
+        </section>
+
+        <section id="shop">
+            <ul class="productList">
+                <li class="productItem">
+                    <figure class="productImage">
+                        <img src="assets/LUKA_EDITED.png">
+                    </figure>
+                    <h3 class="productName">Luka Doncic</h3>
+                    <p class="productPrice">$1,100.00</p>
+                    <button class="productControl addToCartBtn">Add to cart</button>
+                </li>
+                <li class="productItem">
+                    <figure class="productImage">
+                        <img src="assets/cade_graded_10.png">
+                    </figure>
+                    <h3 class="productName">Cade Cunningham</h3>
+                    <p class="productPrice">$900.00</p>
+                    <button class="productControl addToCartBtn">Add to cart</button>
+                </li>
+                <li class="productItem">
+                    <figure class="productImage">
+                        <img src="assets/chet_holo_graded.png">
+                    </figure>
+                    <h3 class="productName">Chet Holmgren</h3>
+                    <p class="productPrice">$750.00</p>
+                    <button class="productControl addToCartBtn">Add to cart</button>
+                </li>
+                <li class="productItem">
+                    <figure class="productImage">
+                        <img src="assets/2019_Prizm_Ja_Morant_Rookie.png">
+                    </figure>
+                    <h3 class="productName">Ja Morant</h3>
+                    <p class="productPrice">$375.00</p>
+                    <button class="productControl addToCartBtn">Add to cart</button>
+                </li>
+                <li class="productItem">
+                    <figure class="productImage">
+                        <img src="assets/73. Charizard Reverse Foil PSA 9 Japanese_Neo Promo.png">
+                    </figure>
+                    <h3 class="productName">Japanese Charizard</h3>
+                    <p class="productPrice">$1,200.00</p>
+                    <button class="productControl addToCartBtn">Add to cart</button>
+                </li>
+                <li class="productItem">
+                    <figure class="productImage">
+                        <img src="assets/38. Jolteon Reverse Foil Rare_Legendary Collection - Copy.png">
+                    </figure>
+                    <h3 class="productName">Joleton Holofoil</h3>
+                    <p class="productPrice">$120.00</p>
+                    <button class="productControl addToCartBtn">Add to cart</button>
+                </li>
+            </ul>
+
+            <aside id="cart">
+                <header>
+                    <h3 class="cartTitle">CART</h3>
+                </header>
+                <ul class="cartItemList">
+                </ul>
+                <div class="cartTotals">
+                    <p class="subtotalLine">
+                        <span class="label">Subtotal:</span>
+                        <span class="value" id="subtotalValue"></span>
+                    </p>
+                    <p class="shippingLine">
+                        <span class="label">Shipping:</span>
+                        <span class="value" id="shippingValue"></span>
+                    </p>
+                    <p class="taxLine">
+                        <span class="label">Tax:</span>
+                        <span class="value" id="taxValue"></span>
+                    </p>
+                    <p class="totalLine">
+                        <span class="label">Total:</span>
+                        <span class="value" id="totalValue"></span>
+                    </p>
+                </div>
+                <button id="checkoutBtn">Checkout</button>
+            </aside>
+        </section>
+
+<section id="contact">
+    <section id="contactWrapper">
+        <aside id="contactInfo">
+            <img src="assets/chef_curry_edited.png" class="infoImage">
+            <img src="assets/SIGNATURE_2.JPG" class="infoImage">
+            <img src="assets/DSC_6615.JPG" class="infoImage">
+            <img src="assets/DSC_6561.JPG" class="infoImage">
+            <img src="assets//DSC_6464.JPG" class="infoImage">
+            <p class="infoText"><strong>EXCLUSIVE</strong> card drops <strong>EVERY</strong> week! <br> Contact Us for deals and purchase details! </p>
+            
+        </aside>
+        
+        <form id="contactForm" novalidate>
+            <h2 class="contactTitle">Contact Us</h2>
+            <fieldset class="formGroup">
+                <label for="firstName">First Name<strong>*</strong></label>
+                <input type="text" id="firstName" name="firstName">
+                <p class="errorMessage"></p>
+            </fieldset>
+
+            <fieldset class="formGroup">
+                <label for="lastName">Last Name<strong>*</strong></label>
+                <input type="text" id="lastName" name="lastName">
+                <p class="errorMessage"></p>
+            </fieldset>
+
+            <fieldset class="formGroup">
+                <label for="phoneNumber">Phone Number<strong>*</strong></label>
+                <input type="tel" id="phoneNumber" name="phoneNumber">
+                <p class="errorMessage"></p>
+            </fieldset>
+
+            <fieldset class="formGroup">
+                <label for="emailAddress">Email<strong>*</strong></label>
+                <input type="email" id="emailAddress" name="emailAddress">
+                <p class="errorMessage"></p>
+            </fieldset>
+
+            <fieldset class="formGroup">
+                <legend class="contactMethodLegend">Preferred Contact Method<strong>*</strong></legend>
+                <label for="contactByPhone">
+                    <input type="radio" id="contactByPhone" name="contactMethod" value="phone">
+                    Phone
+                </label>
+                <label for="contactByEmail">
+                    <input type="radio" id="contactByEmail" name="contactMethod" value="email">
+                    Email
+                </label>
+                <p class="errorMessage"></p>
+            </fieldset>
+
+            <fieldset class="formGroup">
+                <label for="userMessage">Your Message<strong>*</strong></label>
+                <textarea id="userMessage" name="userMessage"></textarea>
+                <p class="errorMessage"></p>
+            </fieldset>
+
+            <button type="submit" id="contactBtn">Send Message</button>
+        </form>
+    </section>
+
+    <p id="submitMessage"></p>
+</section>
+
+    </main>
+
+    <footer id="footer">
+        <nav class="footerNav"></nav>
+        <section class="footerInfo"></section>
+    </footer>
+
 </body>
 </html>
