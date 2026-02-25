@@ -9,7 +9,8 @@
     <script src="script.js" defer></script>
 </head>
 
-<body id="body">
+<!--Used .darkMode class to load the page in dark mode. If light mode is clicked it's a simpler and much brighter look-->
+<body id="body" class="darkMode">
 
     <header id="header">
 
@@ -27,71 +28,89 @@
         </nav>
 
         <aside id="lightDarkMode">
-            <button id="lightDarkModeBTN">&#x1F440;</button>
+            <button id="lightDarkModeBTN">&#x1F440; &#128161;</button>
         </aside>
     </header>
 
     <main id="main">
 
-        <section id="about">
-            <h2 class="aboutTitle">ABOUT MIGGY BECK</h2>
-            <article class="aboutContent">Our newest exclusive drops for the week</article>
-        </section>
+<section id="about">
+    <header>
+        <h2 class="aboutTitle">Miggy Beck Collectables</h2>
+        <p class="aboutSubtitle">Satisfaction, Quality, and Expertise</p>
+    </header>
+    <article class="aboutContent">
+        <figure>
+            <img src="assets/eBay_Analytics.gif" alt="ebay analytics. 100% positive rating.">
+            <figcaption id="figCap">Photo by: Joey Cucco</figcaption>
+        </figure>
 
-         <section id="shopTitle">
-            <h2 class="shopTitleH2">Drop Shop - EXCLUSIVES</h2>
-            <article class="shopTitleDescription">Dont miss our weekly drops! Prices will fluctuate. <br> Some items may never be listed again!</article>
+        <section class="aboutText">
+            <p>Miggy Beck Collectibles is home to some of the RAREST and most exciting collectibles in the world.</p>
+            <p>From Pokémon cards to classic baseball memorabilia, we offer a glimpse into Mike's passion for collecting UNIQUE items that stand the test of time.</p>
         </section>
+    </article>
+</section>
 
-        <section id="shop">
-            <ul class="productList">
-                <li class="productItem">
-                    <figure class="productImage">
-                        <img src="assets/LUKA_EDITED.png">
-                    </figure>
+<section id="shopTitle">
+    <h2 class="shopTitleH2">Drop Shop - EXCLUSIVES</h2>
+        <article class="shopTitleDescription">Dont miss our weekly drops! Prices will fluctuate. <br> Some items may never be listed again!</article>
+</section>
+
+<section id="shop">
+    <ul class="productList">
+            <li class="productItem">
+                <figure class="productImage">
+                    <img src="assets/LUKA_EDITED.png">
+                </figure>
                     <h3 class="productName">Luka Doncic</h3>
-                    <p class="productPrice">$1,100.00</p>
-                    <button class="productControl addToCartBtn">Add to cart</button>
-                </li>
-                <li class="productItem">
-                    <figure class="productImage">
-                        <img src="assets/cade_graded_10.png">
-                    </figure>
+                            <p class="productPrice">$1,100.00</p>
+                                <button class="productControl addToCartBtn">Add to cart</button>
+            </li>
+
+            <li class="productItem">
+                <figure class="productImage">
+                    <img src="assets/cade_graded_10.png">
+                </figure>
                     <h3 class="productName">Cade Cunningham</h3>
-                    <p class="productPrice">$900.00</p>
-                    <button class="productControl addToCartBtn">Add to cart</button>
-                </li>
-                <li class="productItem">
-                    <figure class="productImage">
-                        <img src="assets/chet_holo_graded.png">
-                    </figure>
-                    <h3 class="productName">Chet Holmgren</h3>
-                    <p class="productPrice">$750.00</p>
-                    <button class="productControl addToCartBtn">Add to cart</button>
-                </li>
-                <li class="productItem">
-                    <figure class="productImage">
-                        <img src="assets/2019_Prizm_Ja_Morant_Rookie.png">
-                    </figure>
-                    <h3 class="productName">Ja Morant</h3>
-                    <p class="productPrice">$375.00</p>
-                    <button class="productControl addToCartBtn">Add to cart</button>
-                </li>
-                <li class="productItem">
-                    <figure class="productImage">
-                        <img src="assets/73. Charizard Reverse Foil PSA 9 Japanese_Neo Promo.png">
-                    </figure>
-                    <h3 class="productName">Japanese Charizard</h3>
-                    <p class="productPrice">$1,200.00</p>
-                    <button class="productControl addToCartBtn">Add to cart</button>
-                </li>
-                <li class="productItem">
-                    <figure class="productImage">
-                        <img src="assets/38. Jolteon Reverse Foil Rare_Legendary Collection - Copy.png">
-                    </figure>
-                    <h3 class="productName">Joleton Holofoil</h3>
-                    <p class="productPrice">$120.00</p>
-                    <button class="productControl addToCartBtn">Add to cart</button>
+                        <p class="productPrice">$900.00</p>
+                            <button class="productControl addToCartBtn">Add to cart</button>
+            </li>
+
+            <li class="productItem">
+                <figure class="productImage">
+                    <img src="assets/chet_holo_graded.png">
+                </figure>
+                        <h3 class="productName">Chet Holmgren</h3>
+                            <p class="productPrice">$750.00</p>
+                            <button class="productControl addToCartBtn">Add to cart</button>
+            </li>
+
+            <li class="productItem">
+                <figure class="productImage">
+                    <img src="assets/2019_Prizm_Ja_Morant_Rookie.png">
+                </figure>
+                        <h3 class="productName">Ja Morant</h3>
+                            <p class="productPrice">$375.00</p>
+                                <button class="productControl addToCartBtn">Add to cart</button>
+            </li>
+
+            <li class="productItem">
+                <figure class="productImage">
+                    <img src="assets/73. Charizard Reverse Foil PSA 9 Japanese_Neo Promo.png">
+                </figure>
+                        <h3 class="productName">Japanese Charizard</h3>
+                            <p class="productPrice">$1,200.00</p>
+                                <button class="productControl addToCartBtn">Add to cart</button>
+            </li>
+
+            <li class="productItem">
+                <figure class="productImage">
+                    <img src="assets/38. Jolteon Reverse Foil Rare_Legendary Collection - Copy.png">
+                </figure>
+                        <h3 class="productName">Jolteon Holofoil</h3>
+                            <p class="productPrice">$120.00</p>
+                                <button class="productControl addToCartBtn">Add to cart</button>
                 </li>
             </ul>
 
@@ -128,9 +147,8 @@
         <aside id="contactInfo">
             <img src="assets/chef_curry_edited.png" class="infoImage">
             <img src="assets/SIGNATURE_2.JPG" class="infoImage">
-            <img src="assets/DSC_6615.JPG" class="infoImage">
-            <img src="assets/DSC_6561.JPG" class="infoImage">
             <img src="assets//DSC_6464.JPG" class="infoImage">
+            <img src="assets/DSC_6561.JPG" class="infoImage">
             <p class="infoText"><strong>EXCLUSIVE</strong> card drops <strong>EVERY</strong> week! <br> Contact Us for deals and purchase details! </p>
             
         </aside>

@@ -114,10 +114,60 @@ body {
     cursor: pointer;
 }
 
-@keyframes slowAppear {
-  0% {opacity: 0;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
+#about {
+    padding: 80px 20px;
+}
+
+#about header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.aboutTitle {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.aboutSubtitle {
+    font-size: 16px;
+}
+
+.aboutContent {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.aboutContent figure {
+    flex: 1 1 450px;
+    margin: 0;
+}
+
+.aboutContent img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.aboutContent figcaption {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.aboutText {
+    flex: 1 1 450px;
+}
+
+.aboutText p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
 }
 
 #shopTitle {
@@ -160,8 +210,8 @@ body {
 }
 
 .productItem {
-    background-color: var(--white);
-    border: 1px solid var(--gray);
+    background-image: url(assets/BG_Image_ANIMATED_STARS.gif);
+    border: 1px dashed var(--green);
     padding: 20px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -185,7 +235,7 @@ body {
 
 .productName {
     font-size: 18px;
-    color: var(--dark-blue);
+    color: var(--green);
     margin-bottom: 10px;
 }
 
@@ -196,8 +246,8 @@ body {
 }
 
 .productControl {
-    background-color: var(--dark-blue);
-    color: var(--white);
+    background-color: var(--green);
+    color: var(--black);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -205,12 +255,12 @@ body {
 }
 
 .productControl:hover {
-    background-color: var(--blue);
+    background-color: var(--yellow);
 }
 
 #cart {
     flex: 1;
-    background-color: var(--light-gray);
+    background-color: var(--black);
     padding: 25px;
     border: 1px solid var(--gray);
 }
@@ -218,7 +268,7 @@ body {
 .cartTitle {
     font-size: 20px;
     margin-bottom: 20px;
-    color: var(--dark-blue);
+    color: var(--green);
 }
 
 .cartItemList {
@@ -235,6 +285,7 @@ body {
 
 .cartTotals {
     margin-bottom: 20px;
+    color: var(--green);
 }
 
 .cartTotals p {
@@ -271,15 +322,14 @@ body {
     padding: 60px 0;
 }
 
-#contact header {
-    text-align: center;
-    margin-bottom: 24px;
-}
 #contactWrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
-    flex-wrap: wrap;
 }
 
 #contactInfo {
@@ -289,7 +339,7 @@ body {
 }
 
 .infoImage {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 16px;
