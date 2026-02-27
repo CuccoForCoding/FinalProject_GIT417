@@ -332,6 +332,12 @@ body {
     gap: 40px;
 }
 
+#figCap {
+    font-size: 12px;
+    text-align: right;
+    padding-right: 80px;
+}
+
 #contactInfo {
     flex: 1;
     min-width: 280px;
@@ -357,7 +363,7 @@ body {
 }
 .contactTitle {
     font-size: 32px;
-    color: var(--dark-blue);
+    color: var(--black);
 }
 
 #contactForm {
@@ -377,7 +383,7 @@ body {
 }
 
 .formGroup label,
-.contactMethodLegend {
+.contactMethod {
     font-weight: 600;
     margin-bottom: 6px;
     color: var(--dark-gray);
@@ -449,6 +455,14 @@ body {
     text-align: center;
     font-weight: 600;
     color: var(--green);
+}
+
+.error {
+   border: 2px solid red;
+}
+.errorMessage {
+   color: red;
+   font-size: 14px;
 }
 
 /* MEDIA QUERY (medium) */
