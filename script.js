@@ -139,9 +139,8 @@ checkoutBtn.addEventListener("click", function () {
   //this is where I made a variable for the total in the cart of all values and pushed them into another alert message.
   const finalTotal = totalValue.textContent;
   alert(
-    "EXCLUSIVES ON THE WAY! \nYour total was " +
-      finalTotal +
-      "\nSEE EMAIL FOR DETAILS!",
+    "EXCLUSIVES ON THE WAY! \nYour total is " + finalTotal 
+                                              + "\nSEE EMAIL FOR DETAILS!",
   );
 
   //when the button gets clicked to get rid of the alert, the array for the cart clears and the entire cart is set back to 0.
