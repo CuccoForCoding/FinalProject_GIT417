@@ -465,6 +465,72 @@ body {
    font-size: 14px;
 }
 
+#footer {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerBrand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.footerLogo {
+    width: 120px;
+    height: auto;
+}
+
+.footerBadge {
+    width: 140px;
+    height: auto;
+}
+
+.footerNav {
+    margin-bottom: 24px;
+}
+
+.footerNavList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+.footerNavList a {
+    text-decoration: none;
+    color: var(--green);
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footerNavList a:hover {
+    color: var(--green);
+}
+
+.footerInfo {
+    text-align: center;
+    font-size: 14px;
+    color: var(--red);
+}
+
+.footerInfo p {
+    margin: 4px 0;
+    animation: slightFlash 1s infinite;
+}
+
+@keyframes slightFlash {
+    0% {opacity: 100%}
+    50% {opacity: 50%}
+    100% {opacity: 100%}
+}
+
 /* MEDIA QUERY (medium) */
 @media (max-width: 1200px) {
     #shop {
