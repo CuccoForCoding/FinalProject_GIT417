@@ -95,7 +95,7 @@ function updateCart() {
     //this is where I'm appendong my "X" (remove button)
     //I remember this giving me trouble years ago on a client website
     //Unsure if it's industry standard, but I like to indent my concatinations at the + operator. I find it easier to read/understand
-    //.toFixed(2) to only get the first two numbers after the decimal place
+    //.toFixed(2) to only get the first two numbers after the decimal place. NOTE TO SELF: USE parseFloat() when dealing with getting the cents from a dollar amount with .toFixed()
     cartHTML += "<li>" 
              + cart[i].name 
              + " - $" 
